@@ -1,100 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esther Cardoso</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./assets/icons/favicon.svg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio | Esther Cardoso</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header class="header-menu">
-        <nav class="nav-menu grid">
-            <div class="logo"><a href="index.html"><img src="./assets/img/logo.png" alt="Esther"></a></div>
+  <header class="header">
+    <img src="./img/EstherLogo.svg" alt="Esther">
+    <nav>
+      <ul class="header-menu">
+        <li><a class="center" href="#experiencia">Experiência</a></li>
+        <li><a class="center" href="#formacao">Formação</a></li>
+        <li><a class="center" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <ul class="lista-menu js-menu">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#conhecimentos">Conhecimentos</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+  <main class="introducao">
+    <img src="./img/estherPerfil.jpg" alt="Foto de uma mulher">
+    <div>
+      <h1>Desenvolvedora <br> Front End</h1>
+      <p>Esta é uma página destinada a mostrar os meus projetos.</p>
+      <a class="introducao-btn" href="./esther-cardoso.pdf" download="Currículo-Esther" target="_blank">Download Cv</a>
+    </div>
+  </main>
+
+  <section class="experiencia" id="experiencia" aria-label="Experiência">
+    <h2 class="subtitulo">Experiência</h2>
+    <div>
+      <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft, devFinaces e outros, utilizando apenas
+        <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.
+      </p>
+
+      <div class="projeto">
+        <span class="projeto-ano">2021</span>
+        <h3 class="projeto-titulo">DevFinances</h3>
+        <span class="projeto-titulo">Tecnologias</span>
+        <p class="projeto-texto">O dev.finances é uma aplicação de controle financeiro, onde é possível cadastrar e
+          excluir transações e ver o saldo de entrada e saída.</p>
+        <ul class="projeto-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <a class="site" href="https://esther-cardoso.github.io/dev.finances/" target="_blank">Abrir Site</a>
+        <a class="codigo" href="https://github.com/Esther-Cardoso/dev.finances" target="_blank">Abrir Código</a>
+      </div>
+
+      <div class="projeto">
+        <span class="projeto-ano">2021</span>
+        <h3 class="projeto-titulo">Bikcraft</h3>
+        <span class="projeto-titulo">Tecnologias</span>
+        <p class="projeto-texto">Bikcraft uma empresa fictícia de bicicletas, nesse projeto eu trabalhei no
+          desenvolvimento completo do HTML, CSS e JavaScript do site.</p>
+        <ul class="projeto-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <a href="#" target="_blank">Abrir Site</a>
+        <a href="#" target="_blank">Abrir Código</a>
+      </div>
+
+      <div class="projeto">
+        <span class="projeto-ano">2022</span>
+        <h3 class="projeto-titulo">Formulário</h3>
+        <span class="projeto-titulo">Tecnologias</span>
+        <p class="projeto-texto">Formulário fictício de uma empresa que contrata programadores, nesse projeto eu
+          trabalhei no desenvolvimento completo do HTML, CSS e UI Design do site.</p>
+        <ul class="projeto-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+        <a href="#" target="_blank">Abrir Site</a>
+        <a href="#" target="_blank">Abrir Código</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="formacao" id="formacao" aria-label="Formação">
+    <div class="formacao-container">
+      <h2 class="subtitulo">Formação</h2>
+
+      <div>
+        <p class="formacao-texto">Minha mais recente experiência acadêmica foi o <strong>tecnólogo</strong> 🎓 que fiz
+          na unip em <strong>Análise e Desenvolvimento de Sistemas</strong>. Além disso me mantenho sempre atualizado
+          com cursos intensivos online.</p>
+
+        <ul class="faculdade-lista">
+          <li class="faculdade">
+            <span class="faculdade-tipo">Tecnólogo</span>
+            <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
+            <span class="faculdade-instituicao">UNIP</span>
+          </li>
+        </ul>
+
+        <div class="formacao-extra">
+          <div class="cursos">
+            <h3>Cursos Intensivos</h3>
+            <ul>
+              <li>HTML e CSS para iniciantes <span>23h</span></li>
+              <li>Web Design completo <span>22h</span></li>
             </ul>
-        </nav>
-    </header>
+          </div>
 
-    <main>
-        <section id="sobre" class="sobre grid js-scroll">
-            <h1 class="title">Sobre</h1>
-            <p>Eu sou a Esther, estudante de programação Front end. Essa é uma página destinada a mostrar os meus avanços na área / meus projetos, e para ter mais chances de conseguir meu primeiro emprego nessa profissão.Sou apaixonada por tecnologia, tenho muito foco e vontade de aprender.</p>
-    
-            <a class="btn-cv" href="./assets/esther-cardoso.pdf" download="Currículo-Esther" target="_blank">Download Cv</a>
-        </section>
-    
-    
-        <section id="conhecimentos" class="conhecimentos grid js-scroll">
-            <h1 class="title">Conhecimentos</h1>
-            <ul class="imgs-top">
-                <li><img src="./assets/icons/icon-html5.svg" alt="HTML5"></li>
-                <li><img src="./assets/icons/icon-css3.svg" alt="CSS3"></li>
-                <li><img src="./assets/icons/iconjavascript.svg" alt="JavaScript"></li>
-                
+          <div class="idiomas">
+            <h3>Idiomas</h3>
+            <ul>
+              <li>Inglês <span>/ Básico</span></li>
+              <li>Espanhol <span>/ Básico</span></li>
             </ul>
-    
-            <ul class="imgs-bottom">
-                <li><img src="./assets/icons/icon-git.svg" alt="HTML5"></li>
-                <li><img src="./assets/icons/icon-github.svg" alt="HTML5"></li>
-                <li><img src="./assets/icons/icon-bootstrap.svg" alt="HTML5"></li>
-                <li><img src="./assets/icons/icon-sass.svg" alt="HTML5"></li>
-            </ul>
-        </section>
-    
-        <section id="projetos" class="projetos grid js-scroll">
-            <h1 class="title">Projetos</h1>
-            <div class="container">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <div class="projeto">
-                    <img src="./assets/img/devFinaces.jpg" alt="Dev Finances">
-                    <div class="content">
-                        <h2>Dev Finances</h2>
-                        <p>O dev.finances é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída. Esse projeto foi desenvolvido com as seguintes tecnologias: HTML, CSS e JavaScript.</p>
-                    
-    
-                        <a class="btn" href="https://esther-cardoso.github.io/dev.finances/" target="_blank">Abrir</a>
-                        <a class="repositorio" href="https://github.com/Esther-Cardoso/dev.finances" target="_blank">Ver Repositório</a>
-                    </div>
-                </div>
-    
-               <!--  <div class="projeto">
-                    <img src="./assets/img/calc.jpg" alt="Calculadora">
-                    <div class="content">
-                        <h2>Titulo do projeto</h2>
-                        <p>Por trás de cada site e programa que você acessa no celular ou computador, casualmente ou no trabalho, existem milhões de códigos que passaram pelas mãos de desenvolvedores.</p>
-
-                        <a class="btn" href="#" target="_blank">Abrir</a>
-                        <a class="repositorio" href="#" target="_blank">Ver Repositório</a>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-    
-        <section id="contato" class="contato grid js-scroll">
-            <h1 class="title">Contato</h1>
-            <p>Entre em contato! Para parcerias ou trabalhos.</p>
-            <div class="icones">
-                <a href="https://www.linkedin.com/in/esther-cardoso/" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"/></a>
-                <a href="https://github.com/Esther-Cardoso" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/></a>
-                <a href="mailto:esthercardosofernandes@gmail.com" target="_blank"><img src="https://img.icons8.com/material-sharp/30/000000/gmail.png"/></a>
-                <a href="https://www.instagram.com/_esther_cardoso/" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"/></a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© Esther Cardoso - 2021</p>
-    </footer>
-
-
-    <script src="script.js"></script>
 </body>
+
 </html>
