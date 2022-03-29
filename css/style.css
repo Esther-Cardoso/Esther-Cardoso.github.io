@@ -3,6 +3,7 @@
 @import './global.css';
 @import './header.css';
 @import './introducao.css';
-@import './experiencia.css';
+/* @import './experiencia.css'; */
+@import './novoexperiencia.css';
 @import './formacao.css';
 @import './footer.css';
