@@ -5,7 +5,7 @@ html {
 body {
   font-family: 'Fira Sans', sans-serif;
   margin: 0;
-  color: #141414;
+  color: $cor-primaria;
 }
 
 h1,h2,h3,p {
@@ -25,8 +25,7 @@ img {
 }
 
 .subtitulo {
-  font-size: 8rem;
-  line-height: 1;
+  @include tipografia(128);
   text-transform: uppercase;
   word-break: break-all;
   max-width: 4ch;
@@ -34,7 +33,7 @@ img {
 
 @media (max-width: 800px) {
   .subtitulo {
-    font-size: 3rem;
+    @include tipografia(48);
     text-transform: capitalize;
     max-width: initial !important;
   }

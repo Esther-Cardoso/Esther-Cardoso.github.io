@@ -1,6 +1,6 @@
 .formacao {
-  background: #141414;
-  color: #fff;
+  background: $cor-primaria;
+  color: $white;
 }
 
 .formacao-container {
@@ -25,20 +25,19 @@
 }
 
 .formacao .subtitulo {
-  color: #000;
+  color: $black;
   max-width: 5ch;
 }
 
 .formacao-texto {
-  font-size: 1.5rem;
-  line-height: 1.33;
+  @include tipografia(24);
   max-width: 40ch;
   margin-bottom: 60px;
-  color: #a3a3a3;
+  color: $tom-de-cinza;
 }
 
 .formacao-texto strong {
-  color: #fff;
+  color: $white;
 }
 
 .faculdade-lista {
@@ -50,7 +49,7 @@
 
 .faculdade {
   /* flex: 1; */
-  background: #000;
+  background: $black;
   padding: 20px;
   border-radius: 4px;
   display: flex;
@@ -58,16 +57,15 @@
 }
 
 .faculdade-tipo {
-  font-size: .875rem;
   text-transform: uppercase;
-  color: #a3a3a3;
+  color: $tom-de-cinza;
   margin-bottom: 10px;
+  @include tipografia(14);
 }
 
 .faculdade-curso {
   flex: 1;
-  font-size: 1.125rem;
-  line-height: 1.4;
+  @include tipografia(18);
   margin-bottom: 40px;
   position: relative;
 }
@@ -83,8 +81,8 @@
 }
 
 .faculdade-instituicao {
-  font-size: 1.125rem;
-  color: #a3a3a3;
+  @include tipografia(18);
+  color: $tom-de-cinza;
 }
 
 .cursos {
@@ -92,12 +90,11 @@
 }
 
 .formacao-extra h3 {
-  font-size: .875rem;
-  line-height: 1.4;
-  color: #8f8f8f;
+  color: $titulo-h3;
   text-transform: uppercase;
   margin-bottom: 30px;
   position: relative;
+  @include tipografia(14);
 }
 
 .formacao-extra h3::before {
@@ -119,13 +116,12 @@
 }
 
 .formacao-extra li {
-  font-size: 1.125rem;
-  line-height: 1.1;
+  @include tipografia(18);
   margin-bottom: 20px;
 }
 
 .formacao-extra span {
-  color: #8f8f8f;
+  color: $titulo-h3;
 }
 
 .cursos li {
@@ -140,10 +136,10 @@
     gap: 40px;
   }
   .formacao .subtitulo {
-    color: #fff;
+    color: $white;
   }
   .formacao-texto {
-    font-size: 1.25rem
+    @include tipografia(20);
   }
   .formacao-extra h3::before {
     position: initial;

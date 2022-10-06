@@ -1,18 +1,17 @@
 .projetos h1 {
   text-align: center;
   padding: 30px 0px;
-  font-size: 48px;
-  color: #141414;
+  @include tipografia(48);
+  color: $cor-primaria;
 }
 
 .projetos p {
   margin: auto;
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.33;
+  @include tipografia(24);
   max-width: 50ch;
   margin-bottom: 60px;
-  color: #525252;
+  color: $cinza-claro;
 }
 
 @media (max-width: 800px) {
@@ -33,7 +32,7 @@
 }
 
 .container-projetos .box {
-  background: #f5f5f5;
+  background: $cor-secundaria;
   padding: 20px;
   border-radius: 5px;
 }
@@ -46,16 +45,14 @@
 }
 
 .info h2 {
-  font-size: 1.25rem;
-  line-height: 1.1;
-  color: #141414;
+  @include tipografia(20);
+  color: $cor-primaria;
   margin: 15px 0 5px 0;
 }
 
 .info span {
-  font-size: .875rem;
-  line-height: 1.4;
-  color: #525252;
+  color: $cinza-claro;
+  @include tipografia(14);
 }
 
 .buttons a {
@@ -63,10 +60,10 @@
   text-decoration: none;
   padding: 5px 20px;
   margin: 20px 10px 0 0;
-  color: #141414;
+  color: $cor-primaria;
   font-weight: bold;
   letter-spacing: 1px;
-  background: #e0e0e0;
+  background: $bg-claro;
   border-radius: 3px;
   transition: transform .3s;
 }

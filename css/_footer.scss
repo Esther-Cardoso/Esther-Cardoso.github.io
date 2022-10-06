@@ -1,5 +1,5 @@
 .footer {
-  background: #000;
+  background: $black;
 }
 
 .footer-container {
@@ -13,20 +13,18 @@
 }
 
 .footer-texto {
-  font-size: 1.5rem;
-  line-height: 1.33;
-  color: #cccccc;
+  @include tipografia(24);
+  color: $cinza;
 }
 
 .footer-contato li {
   font-weight: bold;
-  font-size: 2rem;
-  line-height: 1.1;
+  @include tipografia(32);
   margin-bottom: 30px;
 }
 
 .footer-contato li a {
-  color: #fff;
+  color: $white;
   text-decoration: none;
   padding: 10px;
   display: flex;
@@ -40,8 +38,8 @@
 
 .footer-copy {
   grid-column: 1 / -1;
-  font-size: 1.125rem;
-  color: #8f8f8f;
+  color: $titulo-h3;
+  @include tipografia(18);
 }
 
 @media (max-width: 800px) {
@@ -50,6 +48,6 @@
     gap: 40px;
   }
   .footer-cotato li {
-    font-size: 1.5rem;
+    @include tipografia(24);
   }
 }
